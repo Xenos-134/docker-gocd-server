@@ -45,6 +45,8 @@ LABEL gocd.version="25.2.0" \
   gocd.full.version="25.2.0-20485" \
   gocd.git.sha="2720963f2a829313e1f7922fc430682259e36a6d"
 
+RUN apk add --no-cache openssl
+
 # the ports that GoCD server runs on
 EXPOSE 8153
 
